@@ -8,12 +8,13 @@
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Espacio entre elementos */
     align-items: center;
     background-color: var(--colorencabezado);
     position: relative;
     gap: 2rem;
     padding: 1rem;
+    width: 100%;
 }
 
 .logo {
@@ -22,19 +23,22 @@
     height: 5rem;
     margin-top: -2.5rem;
 }
+
 .nombre__universidad {
     text-align: center;
-    justify-content: center;
+    flex-grow: 1; 
+    align-items: center;/* Para centrarlo horizontalmente */
+    font-size: 2rem;
 }
+
 .header__derecho {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
-    text-align: right; 
-    justify-content: flex-end;
-    m
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    margin-left: 1rem; 
 }
-
 .footer {   
     text-align: center;
     background-color: var(--colorpiepagina);
