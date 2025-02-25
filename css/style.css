@@ -1,7 +1,9 @@
 :root {
     --fuentePrincipal: 'Staatliches', cursive;
-    --colorencabezado: #5dd1ee;
-    --colorpiepagina: #1013c1;
+    --colorencabezado: #77E4C8;
+    --headerdengue: #36C2CE;
+    --divinformacon:#478CCF; 
+    --colorpiepagina: #4535C1;
     --fuenteblanca: #fff;
 }
 

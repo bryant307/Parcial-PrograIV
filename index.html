@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -23,9 +24,37 @@
         </section>
     </header> 
     <main>
+        <div class="nav-bg">
+            <nav>
+                <ul>
+                    <li><a href="#que-es">¿Qué es el Dengue?</a></li>
+                    <li><a href="#prevencion">Prevención</a></li>
+                    <li><a href="#sintomas">Síntomas</a></li>
+                </ul>
+            </nav>
+        </div>
         
+        <main>
+            <section id="que-es">
+                <h2>¿Qué es el Dengue?</h2>
+                <p>El dengue es una enfermedad viral transmitida por el mosquito Aedes aegypti...</p>
+                <img src="images/dengue.jpeg" alt="Mosquito Aedes Aegypti">
+            </section>
+            
+            <section id="prevencion">
+                <h2>Prevención</h2>
+                <p>Para prevenir el dengue, es importante evitar la acumulación de agua...</p>
+                <button id="mostrar-mas">Leer más</button>
+                <p id="info-adicional" class="hidden">Evita tener recipientes con agua estancada...</p>
+            </section>
+            
+            <section id="sintomas">
+                <h2>Síntomas</h2>
+                <p>Los síntomas del dengue incluyen fiebre alta, dolor muscular...</p>
+            </section>
+        </main>
     </main>
-    
+    <custom-footer></custom-footer>
     
     <footer class="footer"> <!--Pie de PAgina-->
         <p class="footer__letras">Nombre del estudiante: Bryan Enrique Torres Alvarez</p>
