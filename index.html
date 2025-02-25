@@ -6,10 +6,13 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_small" />
     <title>Parcial IV</title>
 </head>
+
+<script src="scripts/scripts.js"></script>
 <body>
     <header class="header"> <!--Encabezado de Pagina-->
         <section>
@@ -25,32 +28,46 @@
     </header> 
     <main>
         <div class="nav-bg">
-            <nav>
-                <ul>
-                    <li><a href="#que-es">¿Qué es el Dengue?</a></li>
-                    <li><a href="#prevencion">Prevención</a></li>
-                    <li><a href="#sintomas">Síntomas</a></li>
-                </ul>
-            </nav>
+            <nav class="nav-container contenedor">
+                <a href="#que-es">¿Qué es el Dengue?</a>
+                <a href="#prevencion">Prevención</a>
+                <a href="#sintomas">Síntomas</a>
         </div>
         
-        <main>
-            <section id="que-es">
+        <main class="info-dengue">
+            <section class="info" id="que-es">
                 <h2>¿Qué es el Dengue?</h2>
-                <p>El dengue es una enfermedad viral transmitida por el mosquito Aedes aegypti...</p>
-                <img src="images/dengue.jpeg" alt="Mosquito Aedes Aegypti">
+                <p>El dengue es una enfermedad infecciosa causada por el virus del dengue, perteneciente al género flavivirus, que es transmitida por mosquitos, principalmente por el Aedes aegypti. Existen 4 tipos del virus de dengue. La infección causa síntomas gripales, y en ocasiones 
+                    evoluciona hasta convertirse en un cuadro potencialmente mortal, 
+                    llamado dengue grave o dengue hemorrágico</p>
+                <img src="img/dengue.jpg" alt="Mosquito Aedes Aegypti">
             </section>
             
-            <section id="prevencion">
+            <section class="info" id="prevencion">
                 <h2>Prevención</h2>
-                <p>Para prevenir el dengue, es importante evitar la acumulación de agua...</p>
+                <p>El dengue se puede prevenir, siguiendo los siguientes consejos...</p>
+                <ul>
+                    <li>Eliminar criaderos de mosquitos (recipientes con agua estancada)</li>
+                    <li>Usar repelente y ropa que cubra la piel</li>
+                    <li>Colocar mosquiteros y mallas en puertas y ventanas</li>
+                    <li>Fumigar en zonas con alta incidencia de casos</li>
+                </ul>
+            
                 <button id="mostrar-mas">Leer más</button>
+                
                 <p id="info-adicional" class="hidden">Evita tener recipientes con agua estancada...</p>
+                
+                <img id="imagen-prevencion" class="hidden" src="img/prevenir.jpeg" alt="Prevención del dengue">
             </section>
             
-            <section id="sintomas">
+            
+            <section class="info"  id="sintomas">
                 <h2>Síntomas</h2>
-                <p>Los síntomas del dengue incluyen fiebre alta, dolor muscular...</p>
+                <h3>Los síntomas del dengue incluyen:</h3>
+                <p><img src="img/check.svg" alt="check_small">Fiebre alta, dolor muscular...</p>
+                <p><img src="img/check.svg" alt="check_small">Dolor de Cabeza intenso</p>
+                <p><img src="img/check.svg" alt="check_small"> y Vomito</p>
+                <p><img src="img/check.svg" alt="check_small"> y debilidad</p>
             </section>
         </main>
     </main>

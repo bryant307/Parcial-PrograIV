@@ -1,12 +1,37 @@
 :root {
-    --fuentePrincipal: 'Staatliches', cursive;
+    --fuentePrincipal: 'Krub', cursive;
     --colorencabezado: #77E4C8;
     --headerdengue: #36C2CE;
     --divinformacon:#478CCF; 
     --colorpiepagina: #4535C1;
     --fuenteblanca: #fff;
+    --primario: #ffc107;
+    --oscuro: #212121;
+}
+html {
+    font-size: 120.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+body {
+    background: #ebe9f9;
+    background: -moz-linear-gradient(top, #ebe9f9 0%, #d8d0ef 38%, #cec7ec 51%, #c1bfea 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ebe9f9), color-stop(38%, #d8d0ef), color-stop(51%, #cec7ec), color-stop(100%, #c1bfea));
+    background: -webkit-linear-gradient(top, #ebe9f9 0%, #d8d0ef 38%, #cec7ec 51%, #c1bfea 100%);
+    background: -o-linear-gradient(top, #ebe9f9 0%, #d8d0ef 38%, #cec7ec 51%, #c1bfea 100%);
+    background: -ms-linear-gradient(top, #ebe9f9 0%, #d8d0ef 38%, #cec7ec 51%, #c1bfea 100%);
+    background: linear-gradient(to bottom, #ebe9f9 0%, #d8d0ef 38%, #cec7ec 51%, #c1bfea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=0 );
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
+h1,h2, h3, p, a, li{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +62,10 @@
 .logo {
     height: 5rem;
 }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
 .nombre__universidad {
     text-align: center;
@@ -45,6 +74,42 @@
 
 .section__headerderecha {
     padding-right: 25px;
+}
+.nav-bg {
+    background-color: var(--headerdengue);
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.nav-container a{
+    display: block;
+    text-align: center;
+    color: var(--fuenteblanca);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.nav-container a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+.info-dengue {
+    background-color: #fff);
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer {
@@ -56,4 +121,7 @@
 
 .footer__letras {
     color: var(--fuenteblanca);
+}
+.hidden {
+    display: none;
 }
